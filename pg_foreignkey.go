@@ -8,7 +8,6 @@ import (
 	//"encoding/json"
 	//"github.com/lib/pq"
 	//"strconv"
-
 )
 
 //type SlotSize struct {
