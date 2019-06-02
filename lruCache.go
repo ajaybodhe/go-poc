@@ -40,7 +40,7 @@ func (L *LRUCache) Print() {
 }
 func (L *LRUCache) Get(key int) (int, bool) {
 	if node, ok := L.NodeMap[key]; ok {
-		if len(L.NodeMap) == 1 {								
+		if len(L.NodeMap) == 1 || node == L.Head {								
 			return node.Data, true
 		}
 		node.Prev.Next = node.Next
